@@ -1,0 +1,18 @@
+<head>
+  <title>spintax</title>
+</head>
+
+<body>
+  {{> convert}}
+</body>
+
+<template name="convert">
+  <h1>Spintexter!</h1>
+  <form>
+  	List: <input type="radio" name="choice" id="list" checked="true">
+  	Comma: <input type="radio" name="choice" id="comma">
+  </form>
+  <textarea id="convert" value="stuff" style="width:200px; height:200px;"></textarea>
+  <textarea id="result" style="width:200px; height:200px;"></textarea>
+  <input type="button" value="Convert" id="button" />
+</template>
